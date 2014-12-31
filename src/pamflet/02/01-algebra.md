@@ -60,7 +60,7 @@ Further generalizing, we can `flatMap` a function over a decoder to express that
 
 ```scala
 trait Decoder[+A] { self =>
-  def decode(b: BitVector): Err \/ (BitVector, A)
+  ...
   def flatMap[B](f: A => Decoder[B]): Decoder[B] = new Decoder[B] {
     def decode(b: BitVector): Err \/ (BitVector, B) =
       self.decode(b) flatMap { case (rem, a) =>
@@ -77,12 +77,71 @@ As mentioned previously, `flatMap` models a dependency between a decoded value a
 
 ## Encoder
 
-TODO
+```scala
+trait Encoder[-A] {
+  def encode(a: A): Err \/ BitVector
+}
+```
+
+An encoder defines a single abstract operation, `encode`, which converts a value to binary or returns an error. This design differs from other libraries by allowing `encode` to be defined partially over type `A`. For example, this allows an integer encoder to be defined on a subset of the integers without having to resort to newtypes or wrapper types.
+
+### contramap
+
+A function can be mapped over an encoder, similar to `map` on decoder, but unlike `map`, the supplied function has its arrow reversed -- that is, we convert an `Encoder[A]` to an `Encoder[B]` with a function `B => A`. This may seem strange at first, but all we are doing is using the supplied function to convert a `B` to an `A` and then delegating the encoding logic to the original `Encoder[A]`. This operation is called `contramap`:
+
+```scala
+trait Encoder[-A] { self =>
+  def encode(a: A): Err \/ BitVector
+  def contramap[B](f: B => A): Encoder[B] = new Encoder[B] {
+    def encode(b: B): Err \/ BitVector =
+      self.encode(f(b))
+  }
+}
+```
+
+### econtramap
+
+Like decoder's `map`, `contramap` takes a total function. To use a partial function, there's `econtramap`:
+
+```scala
+trait Encoder[-A] { self =>
+  ...
+  def econtramap[B](f: B => Err \/ A): Encoder[B] = new Encoder[B] {
+    def encode(b: B): Err \/ BitVector =
+      f(b) flatMap self.encode
+  }
+}
+```
+
+### flatMap?
+
+Unlike decoder, there is no `flatMap` operation on encoder. Further, there's no "corresponding" operation -- in the way that `contramap` corresponds to `map` and `econtramap` corresponds to `emap`. To get a feel for why this is, try defining a `flatMap`-like method. For instance, you could try "reversing the arrows" and substituting `Encoder` for `Decoder`, yielding a method like `def flatMapLike[B](f: Encoder[B] => A): Encoder[B]` -- but you'll find there's no reasonable way to implement `encode` on the returned encoder.
 
 ## Codec
 
-TODO
+We can now implement `Codec` as the combination of an encoder and decoder:
+
+```scala
+trait Codec[A] extends Encoder[A] with Decoder[A]
+```
+
+A codec has no further abstract operations -- leaving it with only `encode` and `decode`, along with a number of derived operations like `map` and `contramap`. However, at least as presented here, calling `map` on a codec results in a decoder and calling `contramap` on a codec results in an encoder -- effectively "forgetting" how to encode and decode respectively. We need a new set of combinators for working with codecs that does not result in forgetting information.
+
+### xmap
+
+### exmap
+
+### Additional transforms
 
 ## GenCodec
+
+## Variance
+
+You may have noticed the variance annotations in `Encoder`, `Decoder`, and `GenCodec`, and the lack of a variance annotation in `Codec`. Specifically:
+
+ - `Encoder` is defined contravariantly in its type parameter
+ - `Decoder` is defined covariantly in its type parameter
+ - `GenCodec` is defined contravariantly in its first type parameter and covariantly in its second type parameter
+ - `Codec` is defined invariantly in its type parameter
 
 TODO
