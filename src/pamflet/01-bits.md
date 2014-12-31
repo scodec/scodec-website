@@ -3,7 +3,7 @@ scodec-bits
 
 The scodec-bits library contains data structures for working with binary. It has no dependencies on other libraries, which allows it to be used by other libraries without causing dependency conflicts.
 
-The source is on [Github](http://github.com/scodec/scodec-bits) and binaries are available on Maven Central under `org.typelevel / scodec-bits_${scalaBinaryVersion}`. ScalaDoc is available for online browsing at [typelevel.org](http://docs.typelevel.org/api/scodec/bits/stable/). The library adheres to the Typelevel binary compatibility guidelines. In short, versions that share the same major.minor version number are forward binary compatible.
+The source is on [Github](http://github.com/scodec/scodec-bits) and binaries are available on Maven Central under `org.typelevel / scodec-bits_\${scalaBinaryVersion}`. ScalaDoc is available for online browsing at [typelevel.org](http://docs.typelevel.org/api/scodec/bits/stable/). The library adheres to the Typelevel binary compatibility guidelines. In short, versions that share the same major.minor version number are forward binary compatible.
 
 There are two primary data structures in the library, `ByteVector` and `BitVector`. Both are immutable collections and have performance characteristics that are optimized for use in the other scodec modules. However, each type has been designed for general purpose usage, even when other scodec modules are not used. For instance, `ByteVector` can be safely used as a replacement for immutable byte arrays.
 
