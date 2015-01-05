@@ -11,9 +11,9 @@ trait Decoder[+A] {
 }
 ```
 
-A decoder defines a single abstract operation, `decode`, which converts a bit vector in to a pair containing the unconsumed bits and a decoded value, or returns an error. For example, a decoder that decodes a 32-bit integer returns an error when the supplied vector has less than 32-bits, and returns the supplied vector less 32-bits otherwise.
+A decoder defines a single abstract operation, `decode`, which converts a bit vector into a pair containing the unconsumed bits and a decoded value, or returns an error. For example, a decoder that decodes a 32-bit integer returns an error when the supplied vector has less than 32-bits, and returns the supplied vector less 32-bits otherwise.
 
-The result type is a disjunction with `scodec.Err` on the left side. `Err` is an open-for-subclassing data type that contains an error message and a context stack. The context stack contains strings that provide context on where the error occurred in a large structure. We saw an example of this earlier, where the context stack represented a path through the `Arrangement` class, in to a `Vector`, and then in to a `Line` and `Point`. The type is open-for-subclassing so that codecs can return domain specific error types and then pattern match on the received type. An `Err` is *not* a subtype of `Throwable`, so it cannot be used (directly) with `scala.util.Try`. Also note that codecs never throw exceptions (or should never!). All errors are communicated via the `Err` type.
+The result type is a disjunction with `scodec.Err` on the left side. `Err` is an open-for-subclassing data type that contains an error message and a context stack. The context stack contains strings that provide context on where the error occurred in a large structure. We saw an example of this earlier, where the context stack represented a path through the `Arrangement` class, into a `Vector`, and then into a `Line` and `Point`. The type is open-for-subclassing so that codecs can return domain specific error types and then pattern match on the received type. An `Err` is *not* a subtype of `Throwable`, so it cannot be used (directly) with `scala.util.Try`. Also note that codecs never throw exceptions (or should never!). All errors are communicated via the `Err` type.
 
 ### map
 
@@ -149,7 +149,7 @@ val tupleCodec: Codec[(Int, Int)] = ...
 val pointCodec: Codec[Point] = tupleCodec.xmap[Point](t => Point(t._1, t._2), pt => (pt.x, pt.y))
 ```
 
-We convert a `Codec[(Int, Int)]` in to a `Codec[Point]` using the `xmap` operation, passing two functions -- one that converts from a `Tuple2[Int, Int]` to a `Point`, and another that converts a `Point` to a `Tuple2[Int, Int]`. Note: there are a few simpler ways to define codecs for case classes that we'll see later.
+We convert a `Codec[(Int, Int)]` into a `Codec[Point]` using the `xmap` operation, passing two functions -- one that converts from a `Tuple2[Int, Int]` to a `Point`, and another that converts a `Point` to a `Tuple2[Int, Int]`. Note: there are a few simpler ways to define codecs for case classes that we'll see later.
 
 ### exmap
 
@@ -197,7 +197,7 @@ val pointCodec: Codec[Point] = tupleCodec.widenOpt(Point.apply, Point.unapply)
 
 ## GenCodec
 
-The `xmap` and related operations allow us to transfrom a `Codec[A]` in to a `Codec[B]`. Nonetheless, we can improve the definitions of the decoder and encoder specific methods (`map`, `contramap`, etc.). With the types as presented, we said that calling `map` on a codec forgot the encoding logic and returned a decoder, and that calling `contramap` on a codec forgot the decoding logic and returned an encoder.
+The `xmap` and related operations allow us to transfrom a `Codec[A]` into a `Codec[B]`. Nonetheless, we can improve the definitions of the decoder and encoder specific methods (`map`, `contramap`, etc.). With the types as presented, we said that calling `map` on a codec forgot the encoding logic and returned a decoder, and that calling `contramap` on a codec forgot the decoding logic and returned an encoder.
 
 We can remedy this somewhat by introducing a new type that is similar to `Codec` in that it is both an `Encoder` and a `Decoder` -- but dissimilar in that it allows the encoding type to differ from the decoding type.
 
