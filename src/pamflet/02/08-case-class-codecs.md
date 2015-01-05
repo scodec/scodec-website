@@ -1,0 +1,4 @@
+Case Class Codecs
+=================
+
+TODO
