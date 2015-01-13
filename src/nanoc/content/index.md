@@ -3,7 +3,7 @@ title: Home
 ---
 # scodec
 
-scodec is a suite of libraries for working with binary data. Support ranges from simple, performant data structures for working with bits and bytes to streaming encoding and decoding.
+scodec is a suite of Scala libraries for working with binary data. Support ranges from simple, performant data structures for working with bits and bytes to streaming encoding and decoding.
 
     #!scala
     import scodec.bits._
