@@ -9,4 +9,6 @@ Requires nanoc to be installed, along with pygments.rb and kramdown gems.
     sudo gem install pygments.rb
     sudo easy_install Pygments
 
+To preview the site, run "sbt preview-site".
+
 Both api.md and releases.md must be updated upon each scodec module release.
