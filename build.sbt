@@ -6,8 +6,8 @@ organization := "org.typelevel"
 name := "scodec-website"
 
 site.settings
-site.pamfletSupport()
-SiteKeys.siteMappings ++= Seq(sourceDirectory.value / "pamflet" / "CNAME" -> "CNAME")
+site.pamfletSupport("guide")
+site.nanocSupport()
 
 ghpages.settings
 git.remoteRepo := "git@github.com:scodec/scodec.github.io.git"
@@ -24,9 +24,11 @@ GhPagesKeys.synchLocal := {
   val repo = GhPagesKeys.updatedRepository.value
   val git = GitKeys.gitRunner.value
 
-  val nonApiFiles = (repo * ("*" -- "api")).get.toList
-  gitRemoveFiles(repo, nonApiFiles, git, streams.value)
+  // Delete files managed by this project
+  val toDelete = (repo * ("*" -- "api" -- "CNAME")).get.toList
+  gitRemoveFiles(repo, toDelete, git, streams.value)
 
+  // Copy files managed by this project
   val mappings =  for {
     (file, target) <- SiteKeys.siteMappings.value
   } yield (file, repo / target)

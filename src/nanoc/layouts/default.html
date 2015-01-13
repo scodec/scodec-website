@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>scodec - <%= @item[:title] %></title>
+    <link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>">
+    <link rel="stylesheet" href="<%= @items['/pygments/'].path %>">
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+    <div id="main">
+      <%= yield %>
+    </div>
+    <div id="sidebar">
+      <img src="scodec-logo.png" alt="logo" id="logo">
+      <h2>Documentation</h2>
+      <ul>
+        <li><a href="guide">Guide</a></li>
+        <li><a href="api">ScalaDoc</a></li>
+      </ul>
+      <h2>Community</h2>
+      <ul>
+        <li><a href="https://groups.google.com/group/scodec/">Mailing List</a></li>
+        <li><a href="https://github.com/scodec/">GitHub</a></li>
+        <li><a href="https://twitter.com/search?q=scodec&src=sprv">Twitter</a></li>
+        <li><a href="http://stackoverflow.com/questions/tagged/scodec">StackOverflow</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

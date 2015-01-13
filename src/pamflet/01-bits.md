@@ -1,7 +1,7 @@
 scodec-bits
 ===========
 
-The scodec-bits library contains data structures for working with binary. It has no dependencies on other libraries, which allows it to be used by other libraries without causing dependency conflicts.
+The scodec-bits library contains data structures for working with binary. It has no dependencies, which allows it to be used by other libraries without causing dependency conflicts.
 
 There are two primary data structures in the library, `ByteVector` and `BitVector`. Both are immutable collections and have performance characteristics that are optimized for use in the other scodec modules. However, each type has been designed for general purpose usage, even when other scodec modules are not used. For instance, `ByteVector` can be safely used as a replacement for immutable byte arrays.
 
