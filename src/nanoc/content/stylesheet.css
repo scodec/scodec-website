@@ -8,17 +8,8 @@ body {
   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:link,
-a:visited {
-  color: #03f;
-}
-
-a:hover {
-  color: #f90;
+a:link, a:visited, a:hover {
+  color: black;
 }
 
 #main {
@@ -75,6 +66,18 @@ a:hover {
   text-align: right;
 }
 
+#sidebar a {
+  text-decoration: none;
+}
+
+#sidebar a:link, a:visited {
+  color: #03f;
+}
+
+#sidebar a:hover {
+  color: #07f;
+}
+
 #sidebar h2 {
   text-transform: uppercase;
 
@@ -114,4 +117,13 @@ pre {
   padding: 5px;
   border: solid 1px;
   border-color: #d8d8d8;
+}
+
+table, tr, th, td {
+  border: 1px solid lightgray;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  padding: 4px;
+  margin: 10px;
+  font-size: 14px;
 }
