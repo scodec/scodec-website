@@ -7,10 +7,13 @@ This page lists the releases for the scodec modules. The projects adhere to typi
 
 ## scodec-bits
 
+    libraryDependencies += "org.scodec" %% "scodec-bits" % "1.0.5"
+
 As of 1.0.5, scodec-bits is released under the org.scodec group id. Prior to 1.0.5, it was released under the org.typelevel group id.
 
 Version | Changes | ScalaDoc | Scala
 --------|---------|----------|-------
+1.0.5   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.5/CHANGELOG.md) | [API](/api/scodec-bits/1.0.5) | 2.10, 2.11 |
 1.0.4   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.4/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/bits/stable/1.0.4) | 2.10, 2.11 |
 1.0.3   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.3/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/bits/stable/1.0.3) | 2.10, 2.11 |
 1.0.2   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.2/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/bits/stable/1.0.2) | 2.10, 2.11 |
