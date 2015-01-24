@@ -73,13 +73,14 @@ Version | Changes | ScalaDoc | Scala | scodec-core | scalaz-stream
 
 ## scodec-protocols
 
-    libraryDependencies += "org.scodec" %% "scodec-protocols" % "0.6.0-SNAPSHOT"
+    libraryDependencies += "org.scodec" %% "scodec-protocols" % "0.7.0-SNAPSHOT"
 
 The scodec-protocols module provides implementations of common networking protocols, with a focus on processing libpcap files. It is also a good source of example codecs for real world protocols. It provides no binary compatibility guarantees until scalaz-stream 1.0 is released.
 
-Version | Changes | ScalaDoc | Scala
---------|---------|----------|-------
-0.6.0   | N/A     | [API](http://scodec.org/api/scodec-protocols/0.6.0-SNAPSHOT) | 2.10, 2.11
+Version | Changes | ScalaDoc | Scala | scodec-stream
+--------|---------|----------|-------|---------------
+0.7.0   | N/A     | [API](http://scodec.org/api/scodec-protocols/0.7.0-SNAPSHOT) | 2.10, 2.11 | 0.7.0
+0.6.0   | N/A     | [API](http://scodec.org/api/scodec-protocols/0.6.0) | 2.10, 2.11 | 0.6.0
 
 ## scodec-spire
 
