@@ -26,7 +26,7 @@ Version | Changes | ScalaDoc | Scala
 
 ## scodec-core
 
-    libraryDependencies += "org.scodec" %% "scodec-core" % "1.7.0-RC2"
+    libraryDependencies += "org.scodec" %% "scodec-core" % "1.7.0"
 
     libraryDependencies ++= {
       if (scalaBinaryVersion.value startsWith "2.10")
@@ -38,7 +38,7 @@ As of 1.7.0, scodec-bits is released under the org.scodec group id. Prior to 1.7
 
 Version | Changes | ScalaDoc | Scala | scodec-bits | scalaz | Shapeless
 --------|---------|----------|-------|-------------|--------|-----------
-1.7.0-RC2   | [Changes](https://github.com/scodec/scodec/blob/series/1.7.x/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.0-RC2) | 2.10, 2.11 | [1.0,2.0) | none | 2.1.0-RC2
+1.7.0   | [Changes](https://github.com/scodec/scodec/blob/v1.7.0/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.0) | 2.10, 2.11 | [1.0,2.0) | none | 2.1.0
 1.6.0   | [Changes](https://github.com/scodec/scodec/blob/v1.6.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.6.0) | 2.10, 2.11 | [1.0,2.0) | [7.1,7.2) | 2.0.0
 1.5.0   | [Changes](https://github.com/scodec/scodec/blob/v1.5.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.5.0) | 2.10, 2.11 | [1.0,2.0) | [7.1,7.2) | 2.0.0
 1.4.0   | [Changes](https://github.com/scodec/scodec/blob/v1.4.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.4.0) | 2.10, 2.11 | [1.0,2.0) | [7.1,7.2) | 2.0.0
@@ -53,43 +53,44 @@ Version | Changes | ScalaDoc | Scala | scodec-bits | scalaz | Shapeless
 
 ## scodec-scalaz
 
-    libraryDependencies += "org.scodec" %% "scodec-scalaz" % "1.0.0-RC1"
+    libraryDependencies += "org.scodec" %% "scodec-scalaz" % "1.0.0"
 
 The scodec-scalaz module provides interop between scodec-core and scalaz-core.
 
 Version | Changes | ScalaDoc | Scala | scodec-core | scalaz
 --------|---------|----------|-------|-------------|--------
-1.0.0-RC1   | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.0.0-RC1) | 2.10, 2.11 | [1.7,1.8) | [7.1,7.2)
+1.0.0   | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.0.0) | 2.10, 2.11 | [1.7,1.8) | [7.1,7.2)
 
 ## scodec-stream
 
-    libraryDependencies += "org.scodec" %% "scodec-stream" % "0.7.0-SNAPSHOT"
+    libraryDependencies += "org.scodec" %% "scodec-stream" % "0.7.0"
 
 The scodec-stream module provides a streaming layer built on top of scodec-core and scalaz-stream. It provides no binary compatibility guarantees until scalaz-stream 1.0 is released.
 
 Version | Changes | ScalaDoc | Scala | scodec-core | scalaz-stream
 --------|---------|----------|-------|-------------|---------------
-0.7.0   | N/A     | [API](http://scodec.org/api/scodec-scalaz/0.7.0-SNAPSHOT) | 2.10, 2.11 | [1.7,1.8) | 0.6a
+0.7.0   | N/A     | [API](http://scodec.org/api/scodec-stream/0.7.0) | 2.10, 2.11 | [1.7,1.8) | 0.6a
 
 ## scodec-protocols
 
-    libraryDependencies += "org.scodec" %% "scodec-protocols" % "0.7.0-SNAPSHOT"
+    libraryDependencies += "org.scodec" %% "scodec-protocols" % "0.7.0"
 
 The scodec-protocols module provides implementations of common networking protocols, with a focus on processing libpcap files. It is also a good source of example codecs for real world protocols. It provides no binary compatibility guarantees until scalaz-stream 1.0 is released.
 
 Version | Changes | ScalaDoc | Scala | scodec-stream
 --------|---------|----------|-------|---------------
-0.7.0   | N/A     | [API](http://scodec.org/api/scodec-protocols/0.7.0-SNAPSHOT) | 2.10, 2.11 | 0.7.0
+0.7.0   | N/A     | [API](http://scodec.org/api/scodec-protocols/0.7.0) | 2.10, 2.11 | 0.7.0
+0.6.2   | N/A     | [API](http://scodec.org/api/scodec-protocols/0.6.2) | 2.10, 2.11 | 0.6.2
 0.6.1   | N/A     | [API](http://scodec.org/api/scodec-protocols/0.6.1) | 2.10, 2.11 | 0.6.1
 0.6.0   | N/A     | [API](http://scodec.org/api/scodec-protocols/0.6.0) | 2.10, 2.11 | 0.6.0
 
 ## scodec-spire
 
-    libraryDependencies += "org.scodec" %% "scodec-spire" % "0.1.0-SNAPSHOT"
+    libraryDependencies += "org.scodec" %% "scodec-spire" % "0.1.0"
 
 The scodec-spire module provides interop between scodec-core and spire.
 
 Version | Changes | ScalaDoc | Scala | scodec-core | spire
 --------|---------|----------|-------|-------------|--------
-0.1.0   | N/A     | [API](http://scodec.org/api/scodec-spire/0.1.0-SNAPSHOT) | 2.10, 2.11 | [1.7,1.8) | [0.9, 0.10)
+0.1.0   | N/A     | [API](http://scodec.org/api/scodec-spire/0.1.0) | 2.10, 2.11 | [1.7,1.8) | [0.9, 0.10)
 
