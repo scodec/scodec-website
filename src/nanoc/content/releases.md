@@ -17,6 +17,7 @@ As of 1.0.5, scodec-bits is released under the org.scodec group id. Prior to 1.0
 
 Version | Changes | ScalaDoc | Scala
 --------|---------|----------|-------
+1.0.6   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.6/CHANGELOG.md) | [API](/api/scodec-bits/1.0.6) | 2.10, 2.11 |
 1.0.5   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.5/CHANGELOG.md) | [API](/api/scodec-bits/1.0.5) | 2.10, 2.11 |
 1.0.4   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.4/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/bits/stable/1.0.4) | 2.10, 2.11 |
 1.0.3   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.3/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/bits/stable/1.0.3) | 2.10, 2.11 |
