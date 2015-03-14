@@ -39,7 +39,7 @@ As of 1.7.0, scodec-bits is released under the org.scodec group id. Prior to 1.7
 
 Version | Changes | ScalaDoc | Scala | scodec-bits | scalaz | Shapeless
 --------|---------|----------|-------|-------------|--------|-----------
-1.7.0   | [Changes](https://github.com/scodec/scodec/blob/v1.7.1/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.1) | 2.10, 2.11 | [1.0,2.0) | none | 2.1.0
+1.7.1   | [Changes](https://github.com/scodec/scodec/blob/v1.7.1/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.1) | 2.10, 2.11 | [1.0,2.0) | none | 2.1.0
 1.7.0   | [Changes](https://github.com/scodec/scodec/blob/v1.7.0/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.0) | 2.10, 2.11 | [1.0,2.0) | none | 2.1.0
 1.6.0   | [Changes](https://github.com/scodec/scodec/blob/v1.6.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.6.0) | 2.10, 2.11 | [1.0,2.0) | [7.1,7.2) | 2.0.0
 1.5.0   | [Changes](https://github.com/scodec/scodec/blob/v1.5.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.5.0) | 2.10, 2.11 | [1.0,2.0) | [7.1,7.2) | 2.0.0
@@ -71,6 +71,7 @@ The scodec-stream module provides a streaming layer built on top of scodec-core 
 
 Version | Changes | ScalaDoc | Scala | scodec-core | scalaz-stream
 --------|---------|----------|-------|-------------|---------------
+0.7.1   | N/A     | [API](http://scodec.org/api/scodec-stream/0.7.1) | 2.10, 2.11 | [1.7,1.8) | 0.6a
 0.7.0   | N/A     | [API](http://scodec.org/api/scodec-stream/0.7.0) | 2.10, 2.11 | [1.7,1.8) | 0.6a
 
 ## scodec-protocols
@@ -81,6 +82,7 @@ The scodec-protocols module provides implementations of common networking protoc
 
 Version | Changes | ScalaDoc | Scala | scodec-stream
 --------|---------|----------|-------|---------------
+0.7.1   | N/A     | [API](http://scodec.org/api/scodec-protocols/0.7.1) | 2.10, 2.11 | 0.7.1
 0.7.0   | N/A     | [API](http://scodec.org/api/scodec-protocols/0.7.0) | 2.10, 2.11 | 0.7.0
 0.6.2   | N/A     | [API](http://scodec.org/api/scodec-protocols/0.6.2) | 2.10, 2.11 | 0.6.2
 0.6.1   | N/A     | [API](http://scodec.org/api/scodec-protocols/0.6.1) | 2.10, 2.11 | 0.6.1
