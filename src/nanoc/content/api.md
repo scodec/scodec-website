@@ -20,9 +20,11 @@ This page contains ScalaDoc for each version of each scodec module. Active devel
  - [0.1.0](/api/scodec-spire/0.1.0)
 
 ## scodec-stream
+ - [0.7.1](/api/scodec-stream/0.7.1)
  - [0.7.0](/api/scodec-stream/0.7.0)
 
 ## scodec-protocols
+ - [0.7.1](/api/scodec-protocols/0.7.1)
  - [0.7.0](/api/scodec-protocols/0.7.0)
  - [0.6.2](/api/scodec-protocols/0.6.2)
  - [0.6.1](/api/scodec-protocols/0.6.1)
