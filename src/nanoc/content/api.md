@@ -10,6 +10,7 @@ This page contains ScalaDoc for each version of each scodec module. Active devel
  - [1.0.5](/api/scodec-bits/1.0.5)
 
 ## scodec-core
+ - [1.7.1](/api/scodec-core/1.7.1)
  - [1.7.0](/api/scodec-core/1.7.0)
 
 ## scodec-scalaz
