@@ -11,7 +11,7 @@ Released versions are published to [Maven Central](http://search.maven.org/#sear
 
 ## scodec-bits
 
-    libraryDependencies += "org.scodec" %% "scodec-bits" % "1.0.9"
+    libraryDependencies += "org.scodec" %% "scodec-bits" % "1.0.10"
 
 As of 1.0.7, scodec-bits is released for both the JVM and Scala.js.
 
@@ -19,6 +19,7 @@ As of 1.0.5, scodec-bits is released under the org.scodec group id. Prior to 1.0
 
 Version | Changes | ScalaDoc | Scala | Scala.js
 --------|---------|----------|-------|---------
+1.0.10  | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.10/CHANGELOG.md) | [API](/api/scodec-bits/1.0.10) | 2.10, 2.11, 2.12.0-M2 | 0.6
 1.0.9   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.9/CHANGELOG.md) | [API](/api/scodec-bits/1.0.9) | 2.10, 2.11, 2.12.0-M1 | 0.6
 1.0.7   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.7/CHANGELOG.md) | [API](/api/scodec-bits/1.0.7) | 2.10, 2.11, 2.12.0-M1 | 0.6
 1.0.6   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.6/CHANGELOG.md) | [API](/api/scodec-bits/1.0.6) | 2.10, 2.11 |
@@ -31,7 +32,7 @@ Version | Changes | ScalaDoc | Scala | Scala.js
 
 ## scodec-core
 
-    libraryDependencies += "org.scodec" %% "scodec-core" % "1.8.1"
+    libraryDependencies += "org.scodec" %% "scodec-core" % "1.8.2"
 
     libraryDependencies ++= {
       if (scalaBinaryVersion.value startsWith "2.10")
@@ -45,7 +46,8 @@ As of 1.7.0, scodec-core is released under the org.scodec group id. Prior to 1.7
 
 Version | Changes | ScalaDoc | Scala | Scala.js | scodec-bits | scalaz | Shapeless
 --------|---------|----------|-------|----------|-------------|--------|-----------
-1.8.0   | [Changes](https://github.com/scodec/scodec/blob/v1.8.1/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.1) | 2.10, 2.11, 2.12.0-M1 | 0.6 | [1.0,2.0) | none | 2.2.4
+1.8.2   | [Changes](https://github.com/scodec/scodec/blob/v1.8.2/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.2) | 2.10, 2.11, 2.12.0-M2 | 0.6 | [1.0,2.0) | none | 2.2.4
+1.8.1   | [Changes](https://github.com/scodec/scodec/blob/v1.8.1/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.1) | 2.10, 2.11, 2.12.0-M1 | 0.6 | [1.0,2.0) | none | 2.2.4
 1.8.0   | [Changes](https://github.com/scodec/scodec/blob/v1.8.0/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.0) | 2.10, 2.11, 2.12.0-M1 | 0.6 | [1.0,2.0) | none | 2.2.2
 1.7.2   | [Changes](https://github.com/scodec/scodec/blob/v1.7.2/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.2) | 2.10, 2.11 | | [1.0,2.0) | none | 2.1.0
 1.7.1   | [Changes](https://github.com/scodec/scodec/blob/v1.7.1/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.1) | 2.10, 2.11 | | [1.0,2.0) | none | 2.1.0

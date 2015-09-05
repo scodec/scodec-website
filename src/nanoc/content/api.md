@@ -6,12 +6,14 @@ title: ScalaDocs
 This page contains ScalaDoc for each version of each scodec module. Active development versions are included as snapshot versions. Links to ScalaDoc can be generated using the pattern `http://scodec.org/api/${module}/${version}`.
 
 ## scodec-bits
+ - [1.0.10](/api/scodec-bits/1.0.10)
  - [1.0.9](/api/scodec-bits/1.0.9)
  - [1.0.7](/api/scodec-bits/1.0.7)
  - [1.0.6](/api/scodec-bits/1.0.6)
  - [1.0.5](/api/scodec-bits/1.0.5)
 
 ## scodec-core
+ - [1.8.2](/api/scodec-core/1.8.2)
  - [1.8.1](/api/scodec-core/1.8.1)
  - [1.8.0](/api/scodec-core/1.8.0)
  - [1.7.2](/api/scodec-core/1.7.2)
