@@ -11,7 +11,7 @@ Released versions are published to [Maven Central](http://search.maven.org/#sear
 
 ## scodec-bits
 
-    libraryDependencies += "org.scodec" %% "scodec-bits" % "1.0.10"
+    libraryDependencies += "org.scodec" %% "scodec-bits" % "1.0.11"
 
 As of 1.0.7, scodec-bits is released for both the JVM and Scala.js.
 
@@ -19,6 +19,7 @@ As of 1.0.5, scodec-bits is released under the org.scodec group id. Prior to 1.0
 
 Version | Changes | ScalaDoc | Scala | Scala.js
 --------|---------|----------|-------|---------
+1.0.11  | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.11/CHANGELOG.md) | [API](/api/scodec-bits/1.0.11) | 2.10, 2.11, 2.12.0-M3 | 0.6
 1.0.10  | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.10/CHANGELOG.md) | [API](/api/scodec-bits/1.0.10) | 2.10, 2.11, 2.12.0-M2 | 0.6
 1.0.9   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.9/CHANGELOG.md) | [API](/api/scodec-bits/1.0.9) | 2.10, 2.11, 2.12.0-M1 | 0.6
 1.0.7   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.7/CHANGELOG.md) | [API](/api/scodec-bits/1.0.7) | 2.10, 2.11, 2.12.0-M1 | 0.6
@@ -32,7 +33,7 @@ Version | Changes | ScalaDoc | Scala | Scala.js
 
 ## scodec-core
 
-    libraryDependencies += "org.scodec" %% "scodec-core" % "1.8.2"
+    libraryDependencies += "org.scodec" %% "scodec-core" % "1.8.3"
 
     libraryDependencies ++= {
       if (scalaBinaryVersion.value startsWith "2.10")
@@ -46,6 +47,7 @@ As of 1.7.0, scodec-core is released under the org.scodec group id. Prior to 1.7
 
 Version | Changes | ScalaDoc | Scala | Scala.js | scodec-bits | scalaz | Shapeless
 --------|---------|----------|-------|----------|-------------|--------|-----------
+1.8.3   | [Changes](https://github.com/scodec/scodec/blob/v1.8.3/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.3) | 2.10, 2.11, 2.12.0-M2 | 0.6 | [1.0,2.0) | none | 2.2.5
 1.8.2   | [Changes](https://github.com/scodec/scodec/blob/v1.8.2/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.2) | 2.10, 2.11, 2.12.0-M2 | 0.6 | [1.0,2.0) | none | 2.2.4
 1.8.1   | [Changes](https://github.com/scodec/scodec/blob/v1.8.1/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.1) | 2.10, 2.11, 2.12.0-M1 | 0.6 | [1.0,2.0) | none | 2.2.4
 1.8.0   | [Changes](https://github.com/scodec/scodec/blob/v1.8.0/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.0) | 2.10, 2.11, 2.12.0-M1 | 0.6 | [1.0,2.0) | none | 2.2.2
@@ -77,12 +79,13 @@ Version | Changes | ScalaDoc | Scala | scodec-core | scalaz
 
 ## scodec-stream
 
-    libraryDependencies += "org.scodec" %% "scodec-stream" % "0.10.0"
+    libraryDependencies += "org.scodec" %% "scodec-stream" % "0.11.0"
 
 The scodec-stream module provides a streaming layer built on top of scodec-core and scalaz-stream. It provides no binary compatibility guarantees until scalaz-stream 1.0 is released.
 
 Version | Changes | ScalaDoc | Scala | scodec-core | scalaz-stream
 --------|---------|----------|-------|-------------|---------------
+0.11.0  | N/A     | [API](http://scodec.org/api/scodec-stream/0.11.0) | 2.10, 2.11 | [1.8,1.9) | 0.8
 0.10.0  | N/A     | [API](http://scodec.org/api/scodec-stream/0.10.0) | 2.10, 2.11 | [1.8,1.9) | 0.7a
 0.9.0   | N/A     | [API](http://scodec.org/api/scodec-stream/0.9.0)  | 2.10, 2.11 | [1.7,1.8) | 0.7a
 0.8.0   | N/A     | [API](http://scodec.org/api/scodec-stream/0.8.0)  | 2.10, 2.11 | [1.7,1.8) | 0.7a
@@ -91,7 +94,7 @@ Version | Changes | ScalaDoc | Scala | scodec-core | scalaz-stream
 
 ## scodec-protocols
 
-    libraryDependencies += "org.scodec" %% "scodec-protocols" % "0.7.0"
+    libraryDependencies += "org.scodec" %% "scodec-protocols" % "0.10.0"
 
 The scodec-protocols module provides implementations of common networking protocols, with a focus on processing libpcap files. It is also a good source of example codecs for real world protocols. It provides no binary compatibility guarantees until scalaz-stream 1.0 is released.
 
