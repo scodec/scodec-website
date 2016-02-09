@@ -71,12 +71,14 @@ Version | Changes | ScalaDoc | Scala | Scala.js | scodec-bits | scalaz | Shapele
 
 ## scodec-scalaz
 
-    libraryDependencies += "org.scodec" %% "scodec-scalaz" % "1.1.0"
+    libraryDependencies += "org.scodec" %% "scodec-scalaz" % "1.2.0a"
 
 The scodec-scalaz module provides interop between scodec-core and scalaz-core.
 
 Version | Changes | ScalaDoc | Scala | scodec-core | scalaz
 --------|---------|----------|-------|-------------|--------
+1.2.0a  | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.2.0a) | 2.10, 2.11, 2.12.0-M3 | [1.9,1.10) | [7.2,7.3)
+1.2.0   | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.2.0) | 2.10, 2.11 | [1.9,1.10) | [7.1,7.2)
 1.1.0   | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.1.0) | 2.10, 2.11 | [1.8,1.9) | [7.1,7.2)
 1.0.0   | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.0.0) | 2.10, 2.11 | [1.7,1.8) | [7.1,7.2)
 
