@@ -11,7 +11,7 @@ Released versions are published to [Maven Central](http://search.maven.org/#sear
 
 ## scodec-bits
 
-    libraryDependencies += "org.scodec" %% "scodec-bits" % "1.0.12"
+    libraryDependencies += "org.scodec" %% "scodec-bits" % "1.1.0"
 
 As of 1.0.7, scodec-bits is released for both the JVM and Scala.js.
 
@@ -19,6 +19,7 @@ As of 1.0.5, scodec-bits is released under the org.scodec group id. Prior to 1.0
 
 Version | Changes | ScalaDoc | Scala | Scala.js
 --------|---------|----------|-------|---------
+1.1.0   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.1.0/CHANGELOG.md)  | [API](/api/scodec-bits/1.1.0)  | 2.10, 2.11, 2.12.0-M3 | 0.6
 1.0.12  | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.12/CHANGELOG.md) | [API](/api/scodec-bits/1.0.12) | 2.10, 2.11, 2.12.0-M3 | 0.6
 1.0.11  | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.11/CHANGELOG.md) | [API](/api/scodec-bits/1.0.11) | 2.10, 2.11 | 0.6
 1.0.10  | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.10/CHANGELOG.md) | [API](/api/scodec-bits/1.0.10) | 2.10, 2.11, 2.12.0-M2 | 0.6
@@ -34,7 +35,7 @@ Version | Changes | ScalaDoc | Scala | Scala.js
 
 ## scodec-core
 
-    libraryDependencies += "org.scodec" %% "scodec-core" % "1.8.3"
+    libraryDependencies += "org.scodec" %% "scodec-core" % "1.9.0"
 
     libraryDependencies ++= {
       if (scalaBinaryVersion.value startsWith "2.10")
@@ -48,24 +49,25 @@ As of 1.7.0, scodec-core is released under the org.scodec group id. Prior to 1.7
 
 Version | Changes | ScalaDoc | Scala | Scala.js | scodec-bits | scalaz | Shapeless
 --------|---------|----------|-------|----------|-------------|--------|-----------
-1.8.3   | [Changes](https://github.com/scodec/scodec/blob/v1.8.3/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.3) | 2.10, 2.11, 2.12.0-M2 | 0.6 | [1.0,2.0) | none | 2.2.5
-1.8.2   | [Changes](https://github.com/scodec/scodec/blob/v1.8.2/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.2) | 2.10, 2.11, 2.12.0-M2 | 0.6 | [1.0,2.0) | none | 2.2.4
-1.8.1   | [Changes](https://github.com/scodec/scodec/blob/v1.8.1/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.1) | 2.10, 2.11, 2.12.0-M1 | 0.6 | [1.0,2.0) | none | 2.2.4
-1.8.0   | [Changes](https://github.com/scodec/scodec/blob/v1.8.0/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.0) | 2.10, 2.11, 2.12.0-M1 | 0.6 | [1.0,2.0) | none | 2.2.2
-1.7.2   | [Changes](https://github.com/scodec/scodec/blob/v1.7.2/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.2) | 2.10, 2.11 | | [1.0,2.0) | none | 2.1.0
-1.7.1   | [Changes](https://github.com/scodec/scodec/blob/v1.7.1/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.1) | 2.10, 2.11 | | [1.0,2.0) | none | 2.1.0
-1.7.0   | [Changes](https://github.com/scodec/scodec/blob/v1.7.0/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.0) | 2.10, 2.11 | | [1.0,2.0) | none | 2.1.0
-1.6.0   | [Changes](https://github.com/scodec/scodec/blob/v1.6.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.6.0) | 2.10, 2.11 | | [1.0,2.0) | [7.1,7.2) | 2.0.0
-1.5.0   | [Changes](https://github.com/scodec/scodec/blob/v1.5.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.5.0) | 2.10, 2.11 | | [1.0,2.0) | [7.1,7.2) | 2.0.0
-1.4.0   | [Changes](https://github.com/scodec/scodec/blob/v1.4.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.4.0) | 2.10, 2.11 | | [1.0,2.0) | [7.1,7.2) | 2.0.0
-1.3.2   | [Changes](https://github.com/scodec/scodec/blob/v1.3.2/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.3.2) | 2.10, 2.11 | | [1.0,2.0) | [7.1,7.2) | 2.0.0
-1.3.1   | [Changes](https://github.com/scodec/scodec/blob/v1.3.1/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.3.1) | 2.10, 2.11 | | [1.0,2.0) | [7.1,7.2) | 2.0.0
-1.3.0   | [Changes](https://github.com/scodec/scodec/blob/v1.3.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.3.0) | 2.10, 2.11 | | [1.0,2.0) | [7.1,7.2) | 2.0.0
-1.2.2   | [Changes](https://github.com/scodec/scodec/blob/v1.2.2/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.2.2) | 2.10, 2.11 | | [1.0,2.0) | [7.1,7.2) | 2.0.0
-1.2.1   | [Changes](https://github.com/scodec/scodec/blob/v1.2.1/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.2.1) | 2.10, 2.11 | | [1.0,2.0) | [7.1,7.2) | 2.0.0
-1.2.0   | [Changes](https://github.com/scodec/scodec/blob/v1.2.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.2.0) | 2.10, 2.11 | | [1.0,2.0) | [7.1,7.2) | 2.0.0
-1.1.0   | [Changes](https://github.com/scodec/scodec/blob/v1.1.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.1.0) | 2.10, 2.11 | | [1.0,2.0) | [7.1,7.2) | 2.0.0
-1.0.0   | [Changes](https://github.com/scodec/scodec/blob/v1.0.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.0.0) | 2.10, 2.11 | | [1.0,2.0) | [7.0,7.1) | 1.2.4
+1.9.0   | [Changes](https://github.com/scodec/scodec/blob/v1.9.0/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.9.0) | 2.10, 2.11, 2.12.0-M3 | 0.6 | [1.1,1.2) | none | 2.2.5
+1.8.3   | [Changes](https://github.com/scodec/scodec/blob/v1.8.3/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.3) | 2.10, 2.11, 2.12.0-M2 | 0.6 | [1.0,1.1) | none | 2.2.5
+1.8.2   | [Changes](https://github.com/scodec/scodec/blob/v1.8.2/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.2) | 2.10, 2.11, 2.12.0-M2 | 0.6 | [1.0,1.1) | none | 2.2.4
+1.8.1   | [Changes](https://github.com/scodec/scodec/blob/v1.8.1/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.1) | 2.10, 2.11, 2.12.0-M1 | 0.6 | [1.0,1.1) | none | 2.2.4
+1.8.0   | [Changes](https://github.com/scodec/scodec/blob/v1.8.0/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.8.0) | 2.10, 2.11, 2.12.0-M1 | 0.6 | [1.0,1.1) | none | 2.2.2
+1.7.2   | [Changes](https://github.com/scodec/scodec/blob/v1.7.2/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.2) | 2.10, 2.11 | | [1.0,1.1) | none | 2.1.0
+1.7.1   | [Changes](https://github.com/scodec/scodec/blob/v1.7.1/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.1) | 2.10, 2.11 | | [1.0,1.1) | none | 2.1.0
+1.7.0   | [Changes](https://github.com/scodec/scodec/blob/v1.7.0/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.7.0) | 2.10, 2.11 | | [1.0,1.1) | none | 2.1.0
+1.6.0   | [Changes](https://github.com/scodec/scodec/blob/v1.6.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.6.0) | 2.10, 2.11 | | [1.0,1.1) | [7.1,7.2) | 2.0.0
+1.5.0   | [Changes](https://github.com/scodec/scodec/blob/v1.5.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.5.0) | 2.10, 2.11 | | [1.0,1.1) | [7.1,7.2) | 2.0.0
+1.4.0   | [Changes](https://github.com/scodec/scodec/blob/v1.4.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.4.0) | 2.10, 2.11 | | [1.0,1.1) | [7.1,7.2) | 2.0.0
+1.3.2   | [Changes](https://github.com/scodec/scodec/blob/v1.3.2/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.3.2) | 2.10, 2.11 | | [1.0,1.1) | [7.1,7.2) | 2.0.0
+1.3.1   | [Changes](https://github.com/scodec/scodec/blob/v1.3.1/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.3.1) | 2.10, 2.11 | | [1.0,1.1) | [7.1,7.2) | 2.0.0
+1.3.0   | [Changes](https://github.com/scodec/scodec/blob/v1.3.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.3.0) | 2.10, 2.11 | | [1.0,1.1) | [7.1,7.2) | 2.0.0
+1.2.2   | [Changes](https://github.com/scodec/scodec/blob/v1.2.2/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.2.2) | 2.10, 2.11 | | [1.0,1.1) | [7.1,7.2) | 2.0.0
+1.2.1   | [Changes](https://github.com/scodec/scodec/blob/v1.2.1/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.2.1) | 2.10, 2.11 | | [1.0,1.1) | [7.1,7.2) | 2.0.0
+1.2.0   | [Changes](https://github.com/scodec/scodec/blob/v1.2.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.2.0) | 2.10, 2.11 | | [1.0,1.1) | [7.1,7.2) | 2.0.0
+1.1.0   | [Changes](https://github.com/scodec/scodec/blob/v1.1.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.1.0) | 2.10, 2.11 | | [1.0,1.1) | [7.1,7.2) | 2.0.0
+1.0.0   | [Changes](https://github.com/scodec/scodec/blob/v1.0.0/CHANGELOG.md) | [API](http://docs.typelevel.org/api/scodec/core/stable/1.0.0) | 2.10, 2.11 | | [1.0,1.1) | [7.0,7.1) | 1.2.4
 
 ## scodec-scalaz
 
