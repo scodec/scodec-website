@@ -11,7 +11,7 @@ Released versions are published to [Maven Central](http://search.maven.org/#sear
 
 ## scodec-bits
 
-    libraryDependencies += "org.scodec" %% "scodec-bits" % "1.1.1"
+    libraryDependencies += "org.scodec" %% "scodec-bits" % "1.1.2"
 
 As of 1.0.7, scodec-bits is released for both the JVM and Scala.js.
 
@@ -19,6 +19,7 @@ As of 1.0.5, scodec-bits is released under the org.scodec group id. Prior to 1.0
 
 Version | Changes | ScalaDoc | Scala | Scala.js
 --------|---------|----------|-------|---------
+1.1.2   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.1.2/CHANGELOG.md)  | [API](/api/scodec-bits/1.1.2)  | 2.10, 2.11, 2.12.0-RC2 | 0.6
 1.1.1   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.1.1/CHANGELOG.md)  | [API](/api/scodec-bits/1.1.1)  | 2.10, 2.11, 2.12.0-RC1 | 0.6
 1.1.0   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.1.0/CHANGELOG.md)  | [API](/api/scodec-bits/1.1.0)  | 2.10, 2.11, 2.12.0-M3, 2.12.0-M4, 2.12.0-M5 | 0.6
 1.0.12  | [Changes](https://github.com/scodec/scodec-bits/blob/v1.0.12/CHANGELOG.md) | [API](/api/scodec-bits/1.0.12) | 2.10, 2.11, 2.12.0-M3 | 0.6
@@ -50,6 +51,7 @@ As of 1.7.0, scodec-core is released under the org.scodec group id. Prior to 1.7
 
 Version | Changes | ScalaDoc | Scala | Scala.js | scodec-bits | scalaz | Shapeless
 --------|---------|----------|-------|----------|-------------|--------|-----------
+1.10.3  | [Changes](https://github.com/scodec/scodec/blob/v1.10.3/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.10.3) | 2.10, 2.11, 2.12.0-RC2 | 0.6 | [1.1,1.2) | none | 2.3.2
 1.10.2  | [Changes](https://github.com/scodec/scodec/blob/v1.10.2/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.10.2) | 2.10, 2.11, 2.12.0-M5 | 0.6 | [1.1,1.2) | none | 2.3.1
 1.10.1  | [Changes](https://github.com/scodec/scodec/blob/v1.10.1/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.10.1) | 2.10, 2.11, 2.12.0-M4 | 0.6 | [1.1,1.2) | none | 2.3.1
 1.10.0  | [Changes](https://github.com/scodec/scodec/blob/v1.10.0/CHANGELOG.md) | [API](http://scodec.org/api/scodec-core/1.10.0) | 2.10, 2.11, 2.12.0-M4 | 0.6 | [1.1,1.2) | none | 2.3.1
@@ -75,12 +77,14 @@ Version | Changes | ScalaDoc | Scala | Scala.js | scodec-bits | scalaz | Shapele
 
 ## scodec-scalaz
 
-    libraryDependencies += "org.scodec" %% "scodec-scalaz" % "1.3.0a"
+    libraryDependencies += "org.scodec" %% "scodec-scalaz" % "1.4.0a"
 
 The scodec-scalaz module provides interop between scodec-core and scalaz-core.
 
 Version | Changes | ScalaDoc | Scala | scodec-core | scalaz
 --------|---------|----------|-------|-------------|--------
+1.4.0a  | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.4.0a) | 2.10, 2.11, 2.12.0-RC2 | [1.10,1.11) | [7.2,7.3)
+1.4.0   | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.4.0) | 2.10, 2.11, 2.12.0-RC2 | [1.10,1.11) | [7.1,7.2)
 1.3.0a  | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.3.0a) | 2.10, 2.11, 2.12.0-M4 | [1.10,1.11) | [7.2,7.3)
 1.3.0   | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.3.0) | 2.10, 2.11, 2.12.0-M4 | [1.10,1.11) | [7.1,7.2)
 1.2.0a  | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.2.0a) | 2.10, 2.11, 2.12.0-M3 | [1.9,1.10) | [7.2,7.3)
