@@ -37,7 +37,7 @@ Version | Changes | ScalaDoc | Scala | Scala.js
 
 ## scodec-core
 
-    libraryDependencies += "org.scodec" %% "scodec-core" % "1.10.2"
+    libraryDependencies += "org.scodec" %% "scodec-core" % "1.10.3"
 
     libraryDependencies ++= {
       if (scalaBinaryVersion.value startsWith "2.10")
