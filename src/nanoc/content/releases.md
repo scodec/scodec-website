@@ -83,10 +83,8 @@ The scodec-scalaz module provides interop between scodec-core and scalaz-core.
 
 Version | Changes | ScalaDoc | Scala | scodec-core | scalaz
 --------|---------|----------|-------|-------------|--------
-1.5.0a  | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.5.0a) | 2.10, 2.11, 2.12.0 | [1.10,1.11) | [7.2,7.3)
-1.5.0   | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.5.0) | 2.10, 2.11, 2.12.0 | [1.10,1.11) | [7.1,7.2)
-1.4.0a  | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.4.0a) | 2.10, 2.11, 2.12.0-RC2 | [1.10,1.11) | [7.2,7.3)
-1.4.0   | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.4.0) | 2.10, 2.11, 2.12.0-RC2 | [1.10,1.11) | [7.1,7.2)
+1.4.0a  | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.4.0a) | 2.10, 2.11, 2.12 | [1.10,1.11) | [7.2,7.3)
+1.4.0   | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.4.0) | 2.10, 2.11, 2.12 | [1.10,1.11) | [7.1,7.2)
 1.3.0a  | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.3.0a) | 2.10, 2.11, 2.12.0-M4 | [1.10,1.11) | [7.2,7.3)
 1.3.0   | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.3.0) | 2.10, 2.11, 2.12.0-M4 | [1.10,1.11) | [7.1,7.2)
 1.2.0a  | N/A     | [API](http://scodec.org/api/scodec-scalaz/1.2.0a) | 2.10, 2.11, 2.12.0-M3 | [1.9,1.10) | [7.2,7.3)
