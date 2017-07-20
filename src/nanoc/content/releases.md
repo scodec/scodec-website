@@ -11,14 +11,15 @@ Released versions are published to [Maven Central](http://search.maven.org/#sear
 
 ## scodec-bits
 
-    libraryDependencies += "org.scodec" %% "scodec-bits" % "1.1.4"
+    libraryDependencies += "org.scodec" %% "scodec-bits" % "1.1.5"
 
-As of 1.0.7, scodec-bits is released for both the JVM and Scala.js.
+As of 1.0.7, scodec-bits is released for both the JVM and Scala.js. Scala Native support was added in 1.1.5.
 
 As of 1.0.5, scodec-bits is released under the org.scodec group id. Prior to 1.0.5, it was released under the org.typelevel group id.
 
-Version | Changes | ScalaDoc | Scala | Scala.js
---------|---------|----------|-------|---------
+Version | Changes | ScalaDoc | Scala | Scala.js | Native
+--------|---------|----------|-------|----------|--------
+1.1.5   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.1.5/CHANGELOG.md)  | [API](/api/scodec-bits/1.1.5)  | 2.10, 2.11, 2.12.0, 2.13.0-M1 | 0.6 | 0.3
 1.1.4   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.1.4/CHANGELOG.md)  | [API](/api/scodec-bits/1.1.4)  | 2.10, 2.11, 2.12.0 | 0.6
 1.1.3   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.1.3/CHANGELOG.md)  | [API](/api/scodec-bits/1.1.3)  | 2.10, 2.11, 2.12.0 | 0.6
 1.1.2   | [Changes](https://github.com/scodec/scodec-bits/blob/v1.1.2/CHANGELOG.md)  | [API](/api/scodec-bits/1.1.2)  | 2.10, 2.11, 2.12.0 | 0.6
